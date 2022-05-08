@@ -421,8 +421,6 @@ input:focus {
 
   body {
     position: relative;
-    background-image: none;
-    background-color: black;
   }
 
   .navigation {
@@ -555,18 +553,18 @@ input:focus {
     border-style: none;
   }
 
-  /*.contact {
+  .footerNav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 60vh;
-    background-color: black;
+    gap: 20px;
+    padding-right: 10px;
   }
-  iframe {
-    height: 20vh;
-    width: 80vw;
-    border-radius: 5px;
-  }*/
+  .footerSub {
+    display: none;
+  }
+
+  .festLogoSmall {
+    height: 50px;
+  }
 }
