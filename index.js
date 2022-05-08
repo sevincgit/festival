@@ -28,7 +28,7 @@ function toTop(){
 buttonUp.addEventListener("click",toTop)
 
 
-var buttonWhite = document.getElementById("buttonWhite");
+var buttonWhite = document.getElementById("buttonSubscribeTop");
 var popUp = document.getElementById("popUp");
 var closeButton = document.getElementById("closeButton");
 

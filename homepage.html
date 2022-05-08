@@ -27,7 +27,7 @@
             </div>
             <ul class="navlist">
                 <a href="lineup.html" target="blank"><li><i class="fa-solid fa-music navLogo"></i> Lineup</li></a>      
-                <a href="tickets.html" target="blank"><li><i class="fa-solid fa-ticket-simple navLogo"></i> Tickets</li></a> 
+                <a href="#secondSection" target="blank"><li><i class="fa-solid fa-ticket-simple navLogo"></i> Tickets</li></a> 
                 <a href="#playlist"> <li><i class="fa-brands fa-spotify navLogo"></i> Playlist</li></a> 
                 <a href='#' id="lightButton" class="lightModeLogo"><li><i class="fa-solid fa-sun navLogo"></i></li></a>
     
@@ -39,13 +39,16 @@
                 <p class="description">AURORA, Jungle, Alfa Mist, Parcels and more...</p>
                 <p class="info"><i class="fa-solid fa-landmark theater"></i> Anemuirum Ancient Theater</p>
                 <p class="info" style="margin-top:-20px;"><i class="fa-solid fa-map-location-dot location"></i> Anamur, Turkey</p>
-                <a ><button class="buttonWhite" id="buttonWhite">Buy Tickets</button></a>
+                <div class="buttons">
+                    <a ><button class="buttonWhite">Buy Tickets</button></a>
+                    <a ><button class="buttonWhite" id="buttonSubscribeTop">Subscribe</button></a>
+                </div>
                 <!--<a href="tickets.html" target="blank"><button class="buttonWhite" id="buttonWhite">Buy Tickets</button></a>-->
             </div>
             <img src="headlinerImages.svg" class="rhsImage">
         </section>    
     </div>
-    <section class="secondSection" id="playlist">
+    <section class="secondSection" id="secondSection">
         <div class="ticketContainer">
             <div class="ticket">
                 <div class="ticketDate">
@@ -97,7 +100,7 @@
             </div>
             
         </div>
-        <div class = "playlistContainer">   
+        <div class = "playlistContainer" id="playlist">   
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3lYn4LFvWPltfUYRxXDdXh?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>    
     </section>

@@ -84,18 +84,22 @@ is it because it is a list?*/
   font-size: 20px;
 }
 
+.buttons {
+  display: flex;
+
+  gap: 15px;
+}
+
 .buttonWhite {
   height: 55px;
-  width: 250px;
+  width: 200px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   border-radius: 10px;
   border: none;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 22px;
   cursor: pointer;
   /*padding-top: 5px;
     padding-bottom: 5px;*/
@@ -506,8 +510,8 @@ input:focus {
 
   .leftContainer {
     width: 80vw;
-    margin-left: 10vw;
     position: relative;
+    margin: 0;
   }
 
   .title {
