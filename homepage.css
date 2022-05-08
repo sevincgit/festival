@@ -115,23 +115,18 @@ a {
   margin-right: 10vw;
 }
 
-.contact {
+.secondSection {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 55px;
   width: 100vw;
   height: 80vh;
   background-color: black;
+  padding-bottom: 10px;
 }
 
-.contactField {
-  display: flex;
-  flex-direction: row;
-  width: 900px;
-  height: 600px;
-}
-
-.contactForm {
+.ticketContainer {
   background-color: rgb(49, 18, 18);
   display: flex;
   flex-direction: column;
@@ -139,35 +134,44 @@ a {
   align-items: center;
   gap: 20px;
   height: 600px;
-  width: 400px;
+  width: 800px;
   color: white;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-iframe {
-  height: 600px;
-  width: 400px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+.ticket {
+  height: 100px;
+  width: 90%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  border-radius: 10px;
 }
 
-.contactInput {
-  height: 30px;
-  width: 250px;
-  border-radius: 5px;
-  border: none;
+.ticketText1 {
+  font-weight: bold;
 }
 
-.contactInput::placeholder {
-  text-indent: 5px;
+.ticketType {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.submitButton {
-  height: 30px;
-  width: 255px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+.ticketType p {
+  margin: 0;
+}
+
+.ticketButton {
+  height: 50px;
+  width: 120px;
+  background-color: rgb(255, 92, 0);
+  color: white;
   border-radius: 5px;
   border: none;
   text-decoration: none;
@@ -176,6 +180,13 @@ iframe {
   font-weight: bold;
   font-size: 13px;
   cursor: pointer;
+}
+
+iframe {
+  height: 600px;
+  width: 400px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .footer {
@@ -317,12 +328,7 @@ input:focus {
   cursor: pointer;
 }
 
-.light-mode .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 80vh;
+.light-mode .secondSection {
   background-color: rgb(255, 254, 250);
 }
 
@@ -527,26 +533,50 @@ input:focus {
     height: 20vh;
   }
 
-  .contact {
-    height: auto;
-  }
-
-  .contactField {
+  .secondSection {
     flex-wrap: wrap;
     height: auto;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 100%;
     gap: 20px;
     background-color: black;
     border-radius: none;
   }
 
-  .contactForm {
-    height: 300px;
-    width: 300px;
+  .ticketContainer {
+    height: 600px;
+    width: 100%;
   }
 
+  .ticket {
+    height: 130px;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    border-radius: 10px;
+  }
+
+  .ticketDate {
+    padding-left: 5px;
+  }
+
+  .ticketButton {
+    height: 100%;
+    width: 60px;
+    background-color: rgb(255, 92, 0);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+  }
   iframe {
     height: 300px;
     width: 300px;
