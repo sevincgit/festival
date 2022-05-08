@@ -1,13 +1,17 @@
 @import url("http://fonts.cdnfonts.com/css/source-sans-pro");
 
 body {
-  background-size: 100%; /* To set the background image We can set it "cover" instead of 100% for single, non-scrollable page*/
-  background-repeat: no-repeat;
-  background-image: url("backgroundDark.svg");
+  background-color: black;
   font-family: "Source Sans Pro", sans-serif;
   padding: 0; /*to romeve the overflow so that the page wont be scrollable*/
   margin: 0; /*to romeve the overflow so that the page wont be scrollable*/
   overflow-x: hidden;
+}
+
+.firstPage {
+  background-size: 100%; /* To set the background image We can set it "cover" instead of 100% for single, non-scrollable page*/
+  background-repeat: no-repeat;
+  background-image: url("backgroundDark.svg");
 }
 
 .navigation {
@@ -432,6 +436,7 @@ input:focus {
 
   .menuButton {
     display: flex;
+    margin-right: 10vw;
     color: white;
   }
   .menuWrapper {
