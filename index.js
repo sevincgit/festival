@@ -29,6 +29,7 @@ buttonUp.addEventListener("click",toTop)
 
 
 var buttonWhite = document.getElementById("buttonSubscribeTop");
+var submitButton = document.getElementById("submitButton");
 var popUp = document.getElementById("popUp");
 var closeButton = document.getElementById("closeButton");
 
@@ -38,7 +39,8 @@ function displayPopUp(){
 
 function closePopUp(){
     popUp.style.display = "none"; 
- }
+}
 
- buttonWhite.addEventListener("click",displayPopUp)
- closeButton.addEventListener("click",closePopUp)
+buttonWhite.addEventListener("click",displayPopUp)
+submitButton.addEventListener("click",closePopUp)
+closeButton.addEventListener("click",closePopUp)
