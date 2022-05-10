@@ -269,6 +269,13 @@ li {
   width: 100vw;
 }
 
+/* not working
+ .lowerFooter li:hover {
+  color: rgb(255, 92, 0);
+  cursor: pointer;
+  transition: 0.5s ease;
+} */
+
 .socialLogos {
   display: flex;
   flex-direction: row;
