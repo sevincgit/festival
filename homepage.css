@@ -352,7 +352,7 @@ input:focus {
   color: black;
 }
 
-.light-mode .festLogoSmall {
+.light-mode .festLogoSmall path {
   fill: rgb(255, 92, 0);
 }
 
