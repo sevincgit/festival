@@ -58,6 +58,7 @@ is it because it is a list?*/
   justify-content: center;
   align-items: center;
   color: white;
+  gap: 10vh;
 }
 
 .dateLists {
