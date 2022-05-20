@@ -109,6 +109,11 @@ a:visited {
   color: inherit;
 }
 
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
 a {
   text-decoration: none;
 }
