@@ -11,6 +11,7 @@ body {
   overflow-x: hidden;
 }
 
+/*NAVIGATION START*/
 .navigation {
   display: flex;
   align-items: center;
@@ -49,7 +50,9 @@ is it because it is a list?*/
   cursor: pointer;
   transition: 0.5s ease;
 }
+/*NAVIGATION END*/
 
+/* MAIN SECTION START */
 .mainSection {
   height: 82vh;
   width: 100vw;
@@ -61,6 +64,7 @@ is it because it is a list?*/
   gap: 10vh;
 }
 
+/* LINEUP BY DATES */
 .dateLists {
   display: flex;
   flex-direction: row;
@@ -112,6 +116,7 @@ is it because it is a list?*/
   /*padding-top: 5px;
     padding-bottom: 5px;*/
 }
+/* MAIN SECTION END */
 
 a:visited {
   text-decoration: none;
@@ -127,6 +132,7 @@ a {
   text-decoration: none;
 }
 
+/* FOOTER START */
 .footer {
   height: 30vh;
   width: 100vw;
@@ -219,13 +225,14 @@ li {
   margin-left: 10vw;
   gap: 35px;
 }
+/* FOOTER END */
 
 /*to remove the rectanguar shape out of the input field when clicked*/
 input:focus {
   outline: none;
 }
 
-/*Lightmode*/
+/*LIGHTMODE START*/
 .lightModeLogo {
   display: flex;
 }
@@ -281,7 +288,9 @@ input:focus {
   background-color: rgb(255, 92, 0);
   color: white;
 }
+/*LIGHTMODE END*/
 
+/* SCROLL UP BUTTON */
 .buttonUp {
   height: 50px;
   width: 50px;
@@ -306,10 +315,12 @@ input:focus {
   transition: 0.5s ease;
 }
 
+/* HAMBURGER MENU BUTTON (NOT DISPLAYED IN LARGE SCREEN) */
 .menuButton {
   display: none;
 }
-/*Mobile view*/
+
+/*MOBILE VIEW START*/
 @media only screen and (max-width: 600px) {
   html,
   body {
@@ -320,6 +331,7 @@ input:focus {
     position: relative;
   }
 
+  /* MOBILE VIEW - NAVIGATION START*/
   .navigation {
     width: 100vw;
     height: auto;
@@ -389,7 +401,9 @@ input:focus {
   .visibility .navigation {
     gap: 0;
   }
+  /* MOBILE VIEW - NAVIGATION END*/
 
+  /* MOBILE VIEW - MAIN SECTION START*/
   .mainSection {
     height: auto;
     display: flex;
@@ -418,7 +432,9 @@ input:focus {
   .buttonOrange {
     margin: 15px;
   }
+  /* MOBILE VIEW - MAIN SECTION END*/
 
+  /* MOBILE VIEW - FOOTER */
   .footerNav {
     display: flex;
     flex-direction: row;
@@ -451,3 +467,4 @@ input:focus {
     font-size: 20px;
   }
 }
+/* MOBILE VIEW END */

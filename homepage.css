@@ -14,6 +14,7 @@ body {
   background-image: url("backgroundDark.svg");
 }
 
+/*NAVIGATION START*/
 .navigation {
   display: flex;
   align-items: center;
@@ -51,7 +52,9 @@ is it because it is a list?*/
   cursor: pointer;
   transition: 0.5s ease;
 }
+/*NAVIGATION END*/
 
+/* MAIN SECTION START */
 .mainSection {
   height: 82vh;
   width: 100vw;
@@ -122,7 +125,9 @@ a {
   height: 450px; /*changes the height and width at the same time proportionally*/
   margin-right: 10vw;
 }
+/* MAIN SECTION END */
 
+/* SECOND SECTION START */
 .secondSection {
   display: flex;
   justify-content: center;
@@ -133,6 +138,7 @@ a {
   padding-bottom: 10px;
 }
 
+/* TICKET SECTION START */
 .ticketContainer {
   background-color: rgb(49, 18, 18);
   display: flex;
@@ -188,14 +194,18 @@ a {
   font-size: 13px;
   cursor: pointer;
 }
+/* TICKET SECTION END */
 
+/* SPOTIFY PLAYLIST */
 iframe {
   height: 600px;
   width: 400px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+/* SECOND SECTION END */
 
+/* FOOTER START */
 .footer {
   height: 30vh;
   width: 100vw;
@@ -288,13 +298,14 @@ li {
   margin-left: 10vw;
   gap: 35px;
 }
+/* FOOTER END */
 
 /*to remove the rectanguar shape out of the input field when clicked*/
 input:focus {
   outline: none;
 }
 
-/*Lightmode*/
+/*LIGHTMODE START*/
 .lightModeLogo {
   display: flex;
 }
@@ -369,7 +380,9 @@ input:focus {
   background-color: rgb(255, 92, 0);
   color: white;
 }
+/*LIGHTMODE END*/
 
+/* SCROLL UP BUTTON */
 .buttonUp {
   height: 50px;
   width: 50px;
@@ -394,6 +407,7 @@ input:focus {
   transition: 0.5s ease;
 }
 
+/* MODAL START */
 .popUp {
   background-color: rgb(255, 200, 0);
   height: 300px;
@@ -440,11 +454,14 @@ input:focus {
   padding: 0px;
   align-self: flex-end;
 }
+/* MODAL END */
 
+/* HAMBURGER MENU BUTTON (NOT DISPLAYED IN LARGE SCREEN) */
 .menuButton {
   display: none;
 }
-/*Mobile view*/
+
+/*MOBILE VIEW START*/
 @media only screen and (max-width: 600px) {
   html,
   body {
@@ -455,6 +472,7 @@ input:focus {
     position: relative;
   }
 
+  /* MOBILE VIEW - NAVIGATION START*/
   .navigation {
     width: 100vw;
     height: auto;
@@ -524,7 +542,9 @@ input:focus {
   .visibility .navigation {
     gap: 0;
   }
+  /* MOBILE VIEW - NAVIGATION END*/
 
+  /* MOBILE VIEW - MAIN SECTION START*/
   .mainSection {
     display: flex;
     flex-direction: column;
@@ -567,7 +587,9 @@ input:focus {
     height: 25vh;
     margin: 0;
   }
+  /* MOBILE VIEW - MAIN SECTION END*/
 
+  /* MOBILE VIEW - SECOND SECTION START*/
   .secondSection {
     flex-wrap: wrap;
     height: auto;
@@ -579,6 +601,7 @@ input:focus {
     border-radius: none;
   }
 
+  /* MOBILE VIEW - TICKET SECTION START*/
   .ticketContainer {
     height: 600px;
     width: 100%;
@@ -617,7 +640,9 @@ input:focus {
     width: 300px;
     border-style: none;
   }
+  /* MOBILE VIEW - SECOND SECTION END*/
 
+  /* MOBILE VIEW - FOOTER */
   .footerNav {
     display: flex;
     flex-direction: row;
@@ -634,6 +659,7 @@ input:focus {
     margin-left: 8vw;
   }
 
+  /* MOBILE VIEW - MODAL */
   .popUp {
     height: 350px;
     width: 100%;
@@ -668,3 +694,4 @@ input:focus {
     font-size: 20px;
   }
 }
+/* MOBILE VIEW END */
